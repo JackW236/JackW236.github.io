@@ -5,6 +5,9 @@
     Description: This CSS file is used to style the Jack's Bikes website.
 */
 
+html {
+    background-color: #f5f5f5;
+}
 /* 1) Add a 10-pixel margin to the entire page and a fixed width of 725px */
 body {
     margin: 10px;
