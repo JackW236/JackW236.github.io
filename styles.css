@@ -1,25 +1,54 @@
+/*
+    Author: Jack Whitworth
+    University: Southern Illinois University Carbondale
+    Date: 1/25/2025
+    Description: This CSS file is used to style the Jack's Bikes website.
+*/
+
+/* 1) Add a 10-pixel margin to the entire page and a fixed width of 725px */
 body {
     margin: 10px;
     width: 725px;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Light-colored background */
 }
 
+/* 2) Apply 10px padding to headings */
 h1, h2, h3, h4 {
     padding: 10px;
 }
 
+/* 3) Set a 5px left/right padding on paragraphs */
 p {
     padding-left: 5px;
     padding-right: 5px;
 }
 
+/* 7) Apply 10px left padding to list items */
 li {
     padding-left: 10px;
 }
 
-img {
+/* 8) Blue border with rounded corners, 
+   positioned relative and shifted to the left by 10px, 
+   ONLY for the main image on index page */
+#main-img {
     border: 5px solid blue;
     border-radius: 10px;
     position: relative;
     left: 10px;
+    width: 300px; /* Replicates the original width in index.htm */
+}
+
+/* 2-column layout for rentals.htm */
+.column {
+    float: left;
+    width: 45%;    /* You can adjust widths as needed */
+    margin: 2.5%;  /* Simple gap between columns */
+}
+
+/* Clearfix to ensure columns don't overlap the footer */
+#main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
