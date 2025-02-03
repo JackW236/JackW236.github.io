@@ -1,51 +1,59 @@
-/*
-    Author: Jack Whitworth
-    University: Southern Illinois University Carbondale
-    Date: 1/29/2025
-*/
-
-/* 10-pixel margin to the entire page and a fixed width of 725px */
 body {
-    margin: 10px;
+    
+    
     width: 725px;
-    background-color: #f5f5f5; /* Just wont work */
-}
+    background-color: gray; /* this color is gray */
+    margin: 10px auto;
+    } 
 
-/* 10px padding to headings */
-h1, h2, h3, h4 {
+main {
+    width: 50%; 
+    height: 500px;
+    background-color: #ffffff; /* this color is white for column panel */
+    float: left; }
+
+aside {
+    width: 50%;
+    height: 500px;
+    background-color: #ffffff; /* this color is white for column panel */
+    float: right; }
+h1, h2 {
+   
     padding: 10px;
-}
+  
+} 
+p { 
 
-/* 5px left/right padding on paragraph */
-p {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-/* 10px left padding to items that are listed */
+footer { 
+    clear: both; 
+     }
+    
+ul { 
+    
+    padding-left: 10px; } 
+
 li {
-    padding-left: 10px;
-}
-
-/* Blue border, shifted to the left by 10px */
-#main-img {
-    border: 5px solid blue;
-    border-radius: 10px;
+    padding-left: 10px; /* space between bullet and text */ 
+   
+} 
+ 
+/* Special main image on index page with blue border and rounded corner- must have .bluetouch div class */ 
+.bluetouch img {
+    border: 2px solid #B5D3E7;
+    margin: 0;
+    padding: 0;
+    border-radius: 1000px;
+    -moz-border-radius: 1000px;
     position: relative;
-    left: 10px;
-    width: 300px; 
+    right: 10px; 
+    top: 10px; 
 }
 
-/* 2-column layout for rentals.htm */
-.column {
-    float: left;
-    width: 45%;    
-    margin: 2.5%;  
-}
-
-/* Clearfix found online to ensure columns don't overlap the footer */
-#main::after {
-    content: "";
-    display: table;
-    clear: both;
+/* basic images where blue borders are not required */ 
+img {
+    position: static;
 }
