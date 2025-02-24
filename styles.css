@@ -1,21 +1,19 @@
 body {
-    
-    
     width: 725px;
-    background-color: gray; /* this color is gray */
+    background-color: gray; 
     margin: 10px auto;
     } 
 
 main {
     width: 50%; 
     height: 500px;
-    background-color: #ffffff; /* this color is white for column panel */
+    background-color: #ffffff; 
     float: left; }
 
 aside {
     width: 50%;
     height: 500px;
-    background-color: #ffffff; /* this color is white for column panel */
+    background-color: #ffffff; 
     float: right; }
 h1, h2 {
    
@@ -37,11 +35,9 @@ ul {
     padding-left: 10px; } 
 
 li {
-    padding-left: 10px; /* space between bullet and text */ 
+    padding-left: 10px; 
    
 } 
- 
-/* Special main image on index page with blue border and rounded corner- must have .bluetouch div class */ 
 .bluetouch img {
     border: 2px solid #B5D3E7;
     margin: 0;
@@ -53,12 +49,10 @@ li {
     top: 10px; 
 }
 
-/* basic images where blue borders are not required */ 
 img {
     position: static;
 }
 
-/* General Page Styles */
 body {
     width: 725px;
     margin: 10px auto;
@@ -66,7 +60,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Heading and Paragraph Padding */
 h1, h2, h3 {
     padding: 10px;
 }
@@ -75,18 +68,15 @@ p {
     padding: 0 5px;
 }
 
-/* List Items Padding */
 li {
     padding-left: 10px;
 }
 
-/* Image Styling */
 img {
     border: 2px solid blue;
     border-radius: 8px;
 }
 
-/* Two-Column Layout */
 .two-column {
     display: flex;
     gap: 20px;
@@ -102,7 +92,6 @@ img {
     padding: 10px;
 }
 
-/* SlickNav Mobile Menu */
 #nav-menu {
     display: flex;
     list-style: none;
@@ -113,7 +102,6 @@ img {
     margin: 0 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     body {
         width: 100%;
@@ -124,7 +112,6 @@ img {
     }
 }
 
-/* Improved Layout for Rentals Page */
 .container {
     max-width: 900px;
     margin: auto;
@@ -133,7 +120,6 @@ img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Improve Two-Column Layout */
 .two-column {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +141,6 @@ img {
     border-radius: 8px;
 }
 
-/* Image Styling */
 .left-column img {
     max-width: 100%;
     display: block;
@@ -163,8 +148,6 @@ img {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Mobile Responsive Fixes */
 @media (max-width: 768px) {
     .two-column {
         flex-direction: column;
@@ -174,23 +157,19 @@ img {
         width: 100%;
     }
 }
-
-/* Standardized Image Size for Rentals Page */
 .left-column img {
-    width: 300px; /* Set a fixed width */
-    height: auto; /* Maintain aspect ratio */
+    width: 300px; 
+    height: auto; 
     display: block;
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure Proper Spacing */
 .left-column p, .right-column p {
     margin-bottom: 15px;
 }
 
-/* Responsive Fix: Ensure No Overlapping */
 @media (max-width: 768px) {
     .two-column {
         flex-direction: column;
@@ -202,12 +181,11 @@ img {
     }
 
     .left-column img {
-        width: 90%; /* Adjust for smaller screens */
+        width: 90%; 
         max-width: 250px;
     }
 }
 
-/* Rentals Page Layout Fix */
 .two-column {
     display: flex;
     flex-wrap: wrap;
@@ -231,18 +209,15 @@ img {
     border-radius: 8px;
 }
 
-/* Standardized Image Size and Spacing */
 .left-column img {
-    width: 250px; /* Set all images to a fixed size */
-    height: 200px; /* Ensure uniform height */
-    object-fit: cover; /* Prevent distortion */
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
     display: block;
     margin: 10px auto;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Ensure Proper Text Placement */
 .left-column p, .right-column p {
     font-size: 16px;
     line-height: 1.5;
@@ -250,7 +225,6 @@ img {
     text-align: center;
 }
 
-/* Responsive Fixes */
 @media (max-width: 768px) {
     .two-column {
         flex-direction: column;
