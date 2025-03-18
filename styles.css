@@ -1,12 +1,13 @@
-@media screen and (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* General body styling */
 body {
-    background-color: #f0f0f5;
+    background-color: #f8f9fa;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -17,61 +18,105 @@ body {
     justify-content: flex-start;
 }
 
-/* Container */
+/* Main container */
 .container {
     width: 90%;
-    max-width: 900px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 80px;
+    max-width: 750px;
+    padding: 10px;
 }
 
-/* Header */
+/* Header styling */
 header {
-    text-align: center;
-    padding: 20px 0;
+    background-color: #007bff;
+    color: white;
     width: 100%;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
     padding: 15px 0;
     text-align: center;
-    color: #222;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Paragraph */
-p {
-    padding: 10px 0;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-    text-align: center;
+/* Navigation Menu */
+nav {
+    background: #0056b3;
+    padding: 10px;
 }
 
-/* Layout Fixes */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mobile Navigation using SlickNav */
+.slicknav_menu {
+    display: none;
+}
+
+/* Content Styling */
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 20px;
+    text-align: left;
 }
 
-aside {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
+/* Apply padding for elements as per Lab 2 */
+h1, h2, h3 {
+    padding: 10px;
+}
+
+p {
+    padding: 5px 10px;
 }
 
 /* Image Styling */
 img {
+    border: 2px solid #007bff;
+    border-radius: 10px;
     max-width: 100%;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;
+}
+
+/* Multi-column layout for rental page */
+.rental-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rental-item {
+    width: 48%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .rental-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rental-item {
+        width: 90%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
 }
