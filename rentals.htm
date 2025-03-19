@@ -3,6 +3,7 @@
 <html lang="en">
     
 <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
     
     <meta charset="UTF-8">
     <meta name="description" content="Rent bikes at Jack's Bikes.">
@@ -22,6 +23,25 @@
         </head>
     
     <body>
+
+<nav>
+    <ul id="menu">
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- SlickNav Script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('#menu').slicknav();
+});
+</script>
     <div class="container">
         <header>
             <h1>Bike Rentals</h1>
