@@ -3,8 +3,9 @@
 <html lang="en">
     
 <head>
-<link rel="stylesheet" type="text/css" href="styles.css">
-    
+
+<link rel="shortcut icon" href="image/motorpng.png" type="image/png">
+
     <meta charset="UTF-8">
     <meta name="description" content="Rent bikes at Jack's Bikes.">
     <meta name="keywords" content="bike rentals, Jack's Bikes, cycling adventures">
@@ -23,9 +24,8 @@
         </head>
     
     <body>
-
-<nav>
-    <ul id="menu">
+<nav id="menu">
+    <ul>
         <li><a href="index.htm">Home</a></li>
         <li><a href="rentals.htm">Rentals</a></li>
         <li><a href="sales.htm">Sales</a></li>
@@ -33,15 +33,13 @@
         <li><a href="contact.htm">Contact</a></li>
     </ul>
 </nav>
-
-<!-- SlickNav Script -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script>
-$(document).ready(function(){
-    $('#menu').slicknav();
-});
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
 </script>
+
     <div class="container">
         <header>
             <h1>Bike Rentals</h1>
@@ -82,11 +80,6 @@ $(document).ready(function(){
         </footer>
     </div>
     
-    <!-- 
-    Name & University: Jack Whitworth, Southern Illinois University Carbondale
-    Date Developed: 1/29/2025
-    -->
-
     <header>
         
         <h1>Jack's Bikes Rentals</h1>
@@ -101,11 +94,10 @@ $(document).ready(function(){
             <h2>Street Bikes</h2>
             <p>Explore the city with our top-quality street bikes, perfect for casual cruising and city commuting.</p>
             
-            <!-- First street bike -->
             <img src="image/bmx.jpg" id="bmx1" alt="BMX Street Bike">
 
             <p>Need another option?</p>
-            <!-- Second street bike -->
+        
             <img src="image/streetbike2.jpg" id="bmx2" alt="Cruiser Street Bike">
 
             <h3>Price for renting</h3>
@@ -157,6 +149,29 @@ $(document).ready(function(){
         
     </footer>
     
+<img src="image/mountain.jpg" alt="Bike Image" id="hoverImage" width="500">
+<script>
+    document.getElementById("hoverImage").addEventListener("mouseover", function() {
+        this.src = "image/streetbike2.jpg";
+    });
+    document.getElementById("hoverImage").addEventListener("mouseout", function() {
+        this.src = "image/mountain.jpg";
+    });
+</script>
 </body>
     
 </html>
+
+    <style>
+        .hover-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .hover-image:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    
+    <img class="hover-image" src="image/bmx.jpg" alt="Rental BMX Bike">
