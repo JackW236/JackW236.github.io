@@ -3,6 +3,41 @@
 <html lang="en">
     
 <head>
+<link rel="icon" type="image/png" href="images/motorpng.png">
+
+<style>
+    #main-graphic {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>
+<script>
+    function rollover() {
+        document.getElementById("main-graphic").src = "images/4bike.png";
+    }
+    function rollout() {
+        document.getElementById("main-graphic").src = "images/bikepng.png";
+    }
+</script>
+
+<style>
+    #main-graphic {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>
+<script>
+    function rollover() {
+        document.getElementById("main-graphic").src = "images/4bike.png";
+    }
+    function rollout() {
+        document.getElementById("main-graphic").src = "images/bikepng.png";
+    }
+</script>
 <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="description" content="Jack's Bikes - Where you can get the best selection of bikes.">
@@ -21,6 +56,11 @@
     </head>
       
 <body>
+<img id="main-graphic" src="images/bikepng.png" onmouseover="rollover()" onmouseout="rollout()" alt="Main Bike Graphic">
+<audio autoplay>
+    <source src="audio/156031__iwiploppenisse__explosion.mp3" type="audio/mpeg">
+</audio>
+<img src="images/4bike.png" alt="Static Graphic">
 
 <nav>
     <ul id="menu">
@@ -57,7 +97,6 @@ $(document).ready(function(){
         
         <p>Welcome to Jack's Bikes. We offer the best selection of <strong>bikes</strong>.</p>
    
-        <img src="image/Bikepic.webp" id="main-img" alt="Bikes for the page">
         
     </main>
 
