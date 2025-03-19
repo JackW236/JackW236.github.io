@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link rel="shortcut icon" href="image/motorpng.png" type="image/png">
+
 <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +19,22 @@
     </script>
 </head>
 <body>
+<nav id="menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+<script src="js/jquery.slicknav.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
+</script>
+
 
 <nav>
     <ul id="menu">
@@ -26,8 +45,7 @@
         <li><a href="contact.htm">Contact</a></li>
     </ul>
 </nav>
-
-<!-- SlickNav Script -->
+    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 <script>
@@ -53,5 +71,17 @@ $(document).ready(function(){
     <footer>
         <p>&copy; 2025 Bike Rentals Inc.</p>
     </footer>
+
+<img src="image/mountain.jpg" alt="Bike Image" id="hoverImage" width="500">
+<script>
+    document.getElementById("hoverImage").addEventListener("mouseover", function() {
+        this.src = "image/streetbike2.jpg";
+    });
+    document.getElementById("hoverImage").addEventListener("mouseout", function() {
+        this.src = "image/mountain.jpg";
+    });
+</script>
 </body>
 </html>
+
+    <img src="image/streetbike2.jpg" alt="Contact Us Bike" width="300">   

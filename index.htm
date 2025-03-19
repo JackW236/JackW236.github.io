@@ -3,42 +3,9 @@
 <html lang="en">
     
 <head>
-<link rel="icon" type="image/png" href="images/motorpng.png">
 
-<style>
-    #main-graphic {
-        border-radius: 12px;
-        width: 100%;
-        max-width: 400px;
-        transition: opacity 0.3s ease-in-out;
-    }
-</style>
-<script>
-    function rollover() {
-        document.getElementById("main-graphic").src = "images/4bike.png";
-    }
-    function rollout() {
-        document.getElementById("main-graphic").src = "images/bikepng.png";
-    }
-</script>
+<link rel="shortcut icon" href="image/motorpng.png" type="image/png">
 
-<style>
-    #main-graphic {
-        border-radius: 12px;
-        width: 100%;
-        max-width: 400px;
-        transition: opacity 0.3s ease-in-out;
-    }
-</style>
-<script>
-    function rollover() {
-        document.getElementById("main-graphic").src = "images/4bike.png";
-    }
-    function rollout() {
-        document.getElementById("main-graphic").src = "images/bikepng.png";
-    }
-</script>
-<link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="description" content="Jack's Bikes - Where you can get the best selection of bikes.">
     <meta name="keywords" content="bikes, bike accessories, cycling, Jack's Bikes">
@@ -56,14 +23,8 @@
     </head>
       
 <body>
-<img id="main-graphic" src="images/bikepng.png" onmouseover="rollover()" onmouseout="rollout()" alt="Main Bike Graphic">
-<audio autoplay>
-    <source src="audio/156031__iwiploppenisse__explosion.mp3" type="audio/mpeg">
-</audio>
-<img src="images/4bike.png" alt="Static Graphic">
-
-<nav>
-    <ul id="menu">
+<nav id="menu">
+    <ul>
         <li><a href="index.htm">Home</a></li>
         <li><a href="rentals.htm">Rentals</a></li>
         <li><a href="sales.htm">Sales</a></li>
@@ -71,15 +32,13 @@
         <li><a href="contact.htm">Contact</a></li>
     </ul>
 </nav>
-
-<!-- SlickNav Script -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
 <script>
-$(document).ready(function(){
-    $('#menu').slicknav();
-});
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
 </script>
+
     <!-- 
     Name & University: Jack Whitworth, Southern Illinois University Carbondale
     Date Developed: 1/25/2025
@@ -97,6 +56,7 @@ $(document).ready(function(){
         
         <p>Welcome to Jack's Bikes. We offer the best selection of <strong>bikes</strong>.</p>
    
+        <img src="image/Bikepic.webp" id="main-img" alt="Bikes for the page">
         
     </main>
 
@@ -114,6 +74,46 @@ $(document).ready(function(){
         $('.menu').slicknav();
     });
 </script>
+
+<img src="image/mountain.jpg" alt="Bike Image" id="hoverImage" width="500">
+<script>
+    document.getElementById("hoverImage").addEventListener("mouseover", function() {
+        this.src = "image/streetbike2.jpg";
+    });
+    document.getElementById("hoverImage").addEventListener("mouseout", function() {
+        this.src = "image/mountain.jpg";
+    });
+</script>
+
+<audio autoplay>
+    <source src="audio/background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 </body>
    
 </html>
+
+    <audio autoplay loop>
+        <source src="audio/explosion.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+<nav>
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+
+    <img id="main-graphic" src="image/mountain.jpg" 
+         onmouseover="this.src='image/mountain2.jpg';" 
+         onmouseout="this.src='image/mountain.jpg';" 
+         style="border-radius:12px; width:100%; max-width:400px;">
+    
+    <img id="main-graphic" src="image/bikepng.png" 
+         onmouseover="this.src='image/4bike.png';" 
+         onmouseout="this.src='image/bikepng.png';" 
+         style="width:100%; max-width:400px;">
