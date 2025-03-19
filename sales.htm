@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/png" href="images/motorpng.png">
+
+<style>
+    #main-graphic {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>
+<script>
+    function rollover() {
+        document.getElementById("main-graphic").src = "images/4bike.png";
+    }
+    function rollout() {
+        document.getElementById("main-graphic").src = "images/bikepng.png";
+    }
+</script>
+
+<style>
+    #main-graphic {
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>
+<script>
+    function rollover() {
+        document.getElementById("main-graphic").src = "images/4bike.png";
+    }
+    function rollout() {
+        document.getElementById("main-graphic").src = "images/bikepng.png";
+    }
+</script>
 <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +51,15 @@
     </script>
 </head>
 <body>
+<img id="main-graphic" src="images/bikepng.png" onmouseover="rollover()" onmouseout="rollout()" alt="Main Bike Graphic">
 
+
+<video id="videoplayer" src="videos/MTBer rides down a cliff with no climbing gear.mp4" 
+    controls  
+    width="600" height="350"  
+    poster="image/video_placeholder.png" 
+    preload="auto"> 
+</video>
 <nav>
     <ul id="menu">
         <li><a href="index.htm">Home</a></li>
