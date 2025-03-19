@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link rel="shortcut icon" href="image/motorpng.png" type="image/png">
+
 <link rel="icon" type="image/png" href="images/motorpng.png">
 
 <style>
@@ -51,6 +54,22 @@
     </script>
 </head>
 <body>
+<nav id="menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="rentals.htm">Rentals</a></li>
+        <li><a href="sales.htm">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+</nav>
+<script src="js/jquery.slicknav.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#menu').slicknav();
+    });
+</script>
+
 <img id="main-graphic" src="images/bikepng.png" onmouseover="rollover()" onmouseout="rollout()" alt="Main Bike Graphic">
 
 
@@ -70,7 +89,6 @@
     </ul>
 </nav>
 
-<!-- SlickNav Script -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
 <script>
@@ -96,5 +114,12 @@ $(document).ready(function(){
     <footer>
         <p>&copy; 2025 Bike Rentals Inc.</p>
     </footer>
+
+<video width="600" controls autoplay>
+    <source src="videos/bike_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 </body>
 </html>
+
+    <img src="image/4bike.png" alt="Bicycle for Sale" width="400">
