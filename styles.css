@@ -275,3 +275,34 @@ button:hover {
         padding: 5px; /* Smaller cell padding */
     }
 }
+
+.hover-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hover-image img {
+    width: 300px;
+    height: 200px;
+    transition: opacity 0.5s;
+}
+
+/* Image that will be displayed on hover */
+.hover-image::after {
+    content: "";
+    background: url('images/JacksBikes.jpg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* On hover, show the JacksBikes.jpg */
+.hover-image:hover::after {
+    opacity: 1;
+}
