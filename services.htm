@@ -1,92 +1,184 @@
 <!-- 
 Author: Jack Whitworth 
 School: Southern Illinois University Carbondale  
-Date Created: March 17, 2025  
-Date Tested: March 18, 2025  
+Date Created: March 21, 2025  
+Date Tested: March 29, 2025  
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link rel="shortcut icon" href="image/motorpng.png" type="image/png">
-
-<link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Services - Jack's Bikes</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/slicknav.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#nav-menu').slicknav();
-        });
-    </script>
+    <script src="jquery.slicknav.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #9e9e9e;
+            color: white;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        tfoot td {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        @media (max-width: 470px) {
+            table, th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-<nav id="menu">
-    <ul>
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="rentals.htm">Rentals</a></li>
-        <li><a href="sales.htm">Sales</a></li>
-        <li><a href="services.htm">Services</a></li>
-        <li><a href="contact.htm">Contact</a></li>
-    </ul>
-</nav>
-<script src="js/jquery.slicknav.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $('#menu').slicknav();
-    });
-</script>
-
-<nav>
-    <ul id="menu">
-        <li><a href="index.htm">Home</a></li>
-        <li><a href="rentals.htm">Rentals</a></li>
-        <li><a href="sales.htm">Sales</a></li>
-        <li><a href="services.htm">Services</a></li>
-        <li><a href="contact.htm">Contact</a></li>
-    </ul>
-</nav>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('#menu').slicknav();
-});
-</script>
     <header>
-        <h1>Services</h1>
+        <img src="image/Jack'sBikes.PNG" alt="Jack's Bikes Logo" class="logo">
+        <h1>Jack's Bikes</h1>
+        <p><strong>Services</strong></p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="sales.html">Sales</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <ul id="nav-menu">
-            <li><a href="index.htm">Home</a></li>
-            <li><a href="rentals.htm">Rentals</a></li>
-            <li><a href="sales.htm">Sales</a></li>
-            <li><a href="services.htm">Services</a></li>
-            <li><a href="contact.htm">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <p>Content coming soon...</p>
+        <h2>Bike Shop Services</h2>
+        <div class="sales-container">
+            <table>
+                <caption>Our Bike Shop Services</caption>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Estimated Time</th>
+                        <th>Technician</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tune-Up</td>
+                        <td>Basic maintenance service including adjustments and cleaning</td>
+                        <td>$75</td>
+                        <td>1 Hour</td>
+                        <td>John</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Brake Adjustment</td>
+                        <td>Inspect and adjust brake pads and cables</td>
+                        <td>$30</td>
+                        <td>30 Minutes</td>
+                        <td>Lisa</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Wheel Truing</td>
+                        <td>Aligning the wheel to eliminate wobbles</td>
+                        <td>$40</td>
+                        <td>45 Minutes</td>
+                        <td>Mike</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Flat Tire Repair</td>
+                        <td>Replace tube or patch punctured tube</td>
+                        <td>$20</td>
+                        <td>20 Minutes</td>
+                        <td>Sarah</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Full Overhaul</td>
+                        <td>Comprehensive cleaning and part replacement</td>
+                        <td>$200</td>
+                        <td>4 Hours</td>
+                        <td>John</td>
+                        <td>Limited Slots</td>
+                    </tr>
+                    <tr>
+                        <td>Chain Replacement</td>
+                        <td>Replace worn or broken chain</td>
+                        <td>$50</td>
+                        <td>30 Minutes</td>
+                        <td>Lisa</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Gear Adjustment</td>
+                        <td>Optimize shifting performance</td>
+                        <td>$35</td>
+                        <td>30 Minutes</td>
+                        <td>Mike</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Bike Fitting</td>
+                        <td>Personalized bike adjustment for comfort</td>
+                        <td>$150</td>
+                        <td>1.5 Hours</td>
+                        <td>Sarah</td>
+                        <td>Appointment Only</td>
+                    </tr>
+                    <tr>
+                        <td>Suspension Service</td>
+                        <td>Clean and tune front/rear suspension</td>
+                        <td>$100</td>
+                        <td>2 Hours</td>
+                        <td>Mike</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Bike Cleaning</td>
+                        <td>Complete bike wash and polish</td>
+                        <td>$25</td>
+                        <td>30 Minutes</td>
+                        <td>John</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total Services Available: 10</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Bike Rentals Inc.</p>
+        <p><strong>Contact Name:</strong> Jack Whitworth</p>
+        <p><strong>Address:</strong> 1263 Lincoln Dr, Carbondale, IL 62901</p>
+        <p><strong>&copy;</strong> 2025 Jack's Bikes. All rights reserved.</p>
     </footer>
-
-<img src="image/mountain.jpg" alt="Bike Image" id="hoverImage" width="500">
-<script>
-    document.getElementById("hoverImage").addEventListener("mouseover", function() {
-        this.src = "image/streetbike2.jpg";
-    });
-    document.getElementById("hoverImage").addEventListener("mouseout", function() {
-        this.src = "image/mountain.jpg";
-    });
-</script>
 </body>
 </html>
-
-    <img src="image/motorpng.png" alt="Motor Bike" width="350">
