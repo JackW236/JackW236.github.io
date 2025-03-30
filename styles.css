@@ -275,46 +275,41 @@ button:hover {
         padding: 5px; /* Smaller cell padding */
     }
 }
-/* class for image with rounded corners and hover over trqansition */
+
+/* Class for image without centering and rounded corners */
 .cute {
     width: 99%;
     min-width: 200px;
     max-width: 370px;
     position: relative;	
-	margin:  -0 auto;
-	max-width: 435px;
+    margin: 0;  /* Removed centering */
     height: 264px;
-   
 }
 
-/*  hover over and  GRAY touch on banner */
-/* burned in */
+/* Hover over and gray touch on banner */
+/* Adjusted styles for .cute img */
 .cute img {
-    
-    width: 99%;
+    width: 100%;
     min-width: 200px;
     max-width: 350px;
     position: absolute;	
-	overflow: hidden;
+    overflow: hidden;
     border: 3px solid #363A3D;
-    border-radius: 90px;
+    border-radius: 0; /* Removed rounded corners */
     margin: 0;
-	opacity: 1;
-    /* Sets the width and height for the images*/
-	height: 435px;
+    opacity: 1;
+    height: 435px;
     max-height: 264px;
-    
 }
 
-/*  fading effect. */
-
-.cute .cuter{
-  z-index: 9999;
-  transition: opacity 2s linear;
-  cursor: pointer;
+/* Fading effect */
+.cute .cuter {
+    z-index: 9999;
+    transition: opacity 2s linear;
+    cursor: pointer;
 }
 
-/* burned in effect on 2nd image */
+/* Burned in effect on 2nd image */
 .cute:hover > .cuter {
-  opacity: 0.1;
+    opacity: 0.1;
 }
