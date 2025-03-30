@@ -275,18 +275,3 @@ button:hover {
         padding: 5px; /* Smaller cell padding */
     }
 }
-
-.hover-image {
-    width: 300px;
-    height: 200px;
-    transition: opacity 0.3s;
-}
-
-.hidden-image {
-    display: none;
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    z-index: 10;
-    transition: opacity 0.3s;
-}
