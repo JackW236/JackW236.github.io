@@ -7,16 +7,15 @@ Date Tested: March 29, 2025
 /* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 10px;
+    margin: 0;
     padding: 0;
-    width: 725px;
     background-color: #fff; /* White background */
     color: #333; /* Neutral text color */
 }
 
 /* Header Styling */
 header {
-    background-color: rgb(202, 173, 78); /* Primary color: Maroon */
+    background-color: rgb(235, 191, 46); /* Primary color: Maroon */
     color: white; /* White text */
     padding: 15px 0;
     text-align: center;
@@ -53,7 +52,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(202, 173, 78); /* Consistent maroon footer */
+    background-color:rgb(235, 191, 46); /* Consistent maroon footer */
     color: white; /* White text */
 }
 
@@ -72,7 +71,7 @@ table th, table td {
 }
 
 table th {
-    background-color: rgb(202, 173, 78); /* Maroon headers */
+    background-color: rgb(235, 191, 46); /* Maroon headers */
     color: white; /* White header text */
 }
 
@@ -98,7 +97,7 @@ form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: rgb(202, 173, 78); /* Maroon labels */
+    color: rgb(235, 191, 46); /* Maroon labels */
 }
 
 form input, form textarea, form button {
@@ -111,13 +110,13 @@ form input, form textarea, form button {
 }
 
 form input:focus, form textarea:focus {
-    border-color: rgb(202, 173, 78); /* Maroon border on focus */
+    border-color: rgb(235, 191, 46); /* Maroon border on focus */
     outline: none;
     box-shadow: 0 0 5px rgba(128, 0, 0, 0.5); /* Subtle maroon glow */
 }
 
 form button {
-    background-color: rgb(202, 173, 78); /* Maroon button */
+    background-color: rgb(235, 191, 46); /* Maroon button */
     color: white; /* White text */
     border: none;
     cursor: pointer;
@@ -127,14 +126,13 @@ form button {
 form button:hover {
     background-color: #dfc90a; /* Darker maroon on hover */
 }
-
 main p {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
 button {
-    background-color: rgb(202, 173, 78);
+    background-color: rgb(235, 191, 46);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -176,7 +174,7 @@ button:hover {
 }
 
 .sales-column h3 {
-    color: rgb(202, 173, 78); /* Maroon heading for consistency */
+    color: rgb(235, 191, 46); /* Maroon heading for consistency */
     text-align: center;
     margin-bottom: 10px;
 }
@@ -193,7 +191,7 @@ button:hover {
 }
 
 .sales-column th {
-    background-color: rgb(202, 173, 78); /* Maroon table header */
+    background-color: rgb(235, 191, 46); /* Maroon table header */
     color: white; /* White text in header */
 }
 
@@ -209,7 +207,7 @@ button:hover {
     overflow: hidden;
     position: relative;
     background-color: #000; /* Black background for fallback */
-    border: 3px solid rgb(202, 173, 78); /* Maroon border for styling */
+    border: 3px solid rgb(235, 191, 46); /* Maroon border for styling */
     border-radius: 8px; /* Rounded corners */
 }
 
@@ -232,8 +230,8 @@ button:hover {
 .image {
     width: 20%; /* Each image takes up 30% of the container's width */
     height: auto; /* Maintain aspect ratio */
-    border: 2px solid rgb(0, 24, 236); /* Add a maroon border */
-    border-radius: 10px; /* Rounded corners */
+    border: 2px solid rgb(235, 191, 46); /* Add a maroon border */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease; /* Add a hover effect */
 }
