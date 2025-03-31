@@ -22,14 +22,9 @@ header {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    padding: 10px;
-}
-
-/* Paragraph styles */
-p {
-    padding-left: 5px;
-    padding-right: 5px;
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 /* Navigation Links */
