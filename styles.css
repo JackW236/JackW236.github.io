@@ -40,9 +40,15 @@ nav a:hover {
 
 /* Main Content Styling */
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
     padding: 20px;
-    background-color: #f9f9f9; /* Light gray for contrast */
+    background-color: #f9f9f9;
     color: #333;
+}
 }
 
 /* Footer Styling */
@@ -222,8 +228,8 @@ button:hover {
 /* Image Section Styling */
 .image-section {
     display: flex;
-    justify-content: space-between; /* Space out images evenly */
-    align-items: center; /* Align images vertically */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: 20px 0;
 }
