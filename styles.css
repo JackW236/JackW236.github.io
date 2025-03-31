@@ -40,15 +40,9 @@ nav a:hover {
 
 /* Main Content Styling */
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light gray for contrast */
     color: #333;
-}
 }
 
 /* Footer Styling */
