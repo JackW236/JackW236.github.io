@@ -43,13 +43,6 @@ main {
     padding: 20px;
     background-color: #f9f9f9; /* Light gray for contrast */
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh; /* Ensures content is centered vertically */
-    background-color: #f4f4f4;
-    text-align: center;
 }
 
 /* Footer Styling */
