@@ -32,7 +32,7 @@ Date Tested: March 29, 2025
 
     <main>
         <h1>Send us a messaghe!</h1>
-        <form action="contactresult.html" method="get">
+       <form action="contactresult.html" method="get">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
 
@@ -80,22 +80,16 @@ Date Tested: March 29, 2025
 
     <fieldset>
         <legend>Type of Inquiry:</legend>
-        <input type="radio" id="question" name="inquiry" value="Question" required>
-        <label for="question">Question</label>
-        <input type="radio" id="comment" name="inquiry" value="Comment">
-        <label for="comment">Comment</label>
-        <input type="radio" id="complaint" name="inquiry" value="Complaint">
-        <label for="complaint">Complaint</label>
+        <label><input type="radio" name="inquiry" value="Question" required> Question</label>
+        <label><input type="radio" name="inquiry" value="Comment"> Comment</label>
+        <label><input type="radio" name="inquiry" value="Complaint"> Complaint</label>
     </fieldset>
 
     <fieldset>
         <legend>Type of Item:</legend>
-        <input type="radio" id="watch" name="item" value="Watch" required>
-        <label for="watch">Watch</label>
-        <input type="radio" id="bike" name="item" value="Bike">
-        <label for="bike">Bike</label>
-        <input type="radio" id="other" name="item" value="Other">
-        <label for="other">Other</label>
+        <label><input type="radio" name="item" value="Watch" required> Watch</label>
+        <label><input type="radio" name="item" value="Bike"> Bike</label>
+        <label><input type="radio" name="item" value="Other"> Other</label>
     </fieldset>
 
     <button type="submit">Send</button>
