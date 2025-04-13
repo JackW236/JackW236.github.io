@@ -80,10 +80,10 @@ table tr:hover {
 
 form {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border: 1px solid #d2b48c; /* light tan border */
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
@@ -91,60 +91,34 @@ form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: rgb(148, 89, 2); /* warm brown */
+    color: brown; 
 }
 
-form input,
-form select,
-form textarea,
-form button {
+form input, form textarea, form button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cbb292;
+    border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
-    box-sizing: border-box;
 }
 
-form input:focus,
-form select:focus,
-form textarea:focus {
-    border-color: rgb(148, 89, 2);
+form input:focus, form textarea:focus {
+    border-color: brown; 
     outline: none;
-    box-shadow: 0 0 5px rgba(148, 89, 2, 0.5);
+    box-shadow: 0 0 5px rgba(101, 67, 33, 0.5);
 }
 
-form fieldset {
-    border: 1px solid #e2cba0;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-form legend {
-    font-weight: bold;
-    color: rgb(148, 89, 2);
-    margin-bottom: 10px;
-}
-
-form input[type="radio"] {
-    width: auto;
-    margin-right: 8px;
-}
-
-form button[type="submit"],
-form input[type="reset"] {
-    background-color: rgb(148, 89, 2);
-    color: white;
-    font-weight: bold;
+form button {
+    background-color: brown; 
+    color: white; 
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-form button[type="submit"]:hover,
-form input[type="reset"]:hover {
-    background-color: rgb(120, 70, 0);
+form button:hover {
+    background-color: #d2b48c;
 }
 
 main p {
