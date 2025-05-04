@@ -1,60 +1,62 @@
 <!-- 
 Author: Jack Whitworth 
 School: Southern Illinois University Carbondale  
-Date Created: March 21, 2025  
-Date Tested: March 29, 2025  
+Date Created: April 24, 2025  
+Date Tested: May 4, 2025  
 -->
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack's Bikes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/JacksBikes.jpg" type="image/jpeg">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starterdex Home</title>
+  <meta name="description" content="Homepage for the Starterdex project, introducing starter Pokémon and navigation.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/StarterdexLogo.png" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> 
         <script type="text/javascript"> 
             $(document).ready(function(){
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
             }); 
         </script>
 </head>
-
 <body>
 
-    <audio controls autoplay loop hidden>
-        <source src="audio/explosion.mp3" type="audio/mpeg">
-    </audio> 
-    
-    <header>
-        <img src="images/JacksBikes.jpg" alt="Jack's Bikes Logo" class="logo">
-        <h1>Jack's Bikes</h1>
-        <p><em>Your primary cycle shop!</em></p>
-        <nav>
-            <a href="index.htm">Home</a>
-            <a href="rentals.htm">Rentals</a>
-            <a href="sales.htm">Sales</a>
-            <a href="services.htm">Services</a>
-            <a href="contact.htm">Contact</a>
-        </nav>
-    </header>
+  <audio autoplay hidden>
+    <source src="audio/newpage.wav" type="audio/wav">
+  </audio>
 
-    <main>
-        <h2>Welcome to Jack's Bikes</h2>
-        <p>We offer the best selection of <strong>bikes</strong>.</p>
-    </main>
+  <nav>
+    <div class="logo">
+      <img src="images/StarterdexLogo.png" alt="Starterdex Logo" width="80">
+  </div>
 
-    <section class="image-section">
-    <img src="images/Bikepic.jpg" alt="Home picture" class="image">
-    </section>
+    <a href="index.htm">Home</a>
+    <a href="starterdex.htm">Starterdex</a>
+    <a href="generations.htm">Generations</a>
+    <a href="typing.htm">Typing</a>
+    <a href="video.htm">Video</a>
+    <a href="contact.htm">Contact</a>
+  </nav>
 
-    <footer>
-        <p><strong>Contact Name:</strong> Jack Whitworth</p>
-        <p><strong>Address:</strong> 1263 Lincoln Dr, Carbondale, IL 62901</p>
-        <p><strong>&copy;</strong> 2025 Jack's Bikes. All rights reserved.</p>
-    </footer>
-    
+  <div class="container centered-page">
+    <h1>Welcome to the Starterdex</h1>
+    <p>This website is dedicated to the 27 starter Pokémon from across all generations. Whether you're a seasoned trainer or new to the world of Pokémon, this site is here to help you learn about the unique characteristics and types of each starter Pokémon.</p>
+
+    <h2>Explore the Pages:</h2>
+    <ul>
+      <li><strong>Starterdex:</strong> A visual list of all 27 starter Pokémon with images and Pokédex entries.</li>
+      <li><strong>Generations:</strong> See which generation each starter is from and how many were introduced.</li>
+      <li><strong>Typing:</strong> Grow an understanding of the 3 types every starter Pokémon must be.</li>
+      <li><strong>Video:</strong> Watch our weekly recommended Pokémon YouTube video!</li>
+      <li><strong>Contact:</strong> A contact form to get in touch or leave feedback about the Starterdex project.</li>
+    </ul>
+  </div>
+
+  <figure class="cute">
+    <img src="images/whosthatp1.jpg" alt="WhosThat" class="cuter"/>
+    <img src="images/whothatp2.jpg" alt="WhosThatP" />
+  </figure> 
+  
 </body>
-
 </html>
